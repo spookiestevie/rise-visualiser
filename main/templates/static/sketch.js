@@ -29,7 +29,7 @@ function mousePressed() {
 }
 
 function draw() {
-  background(255);
+  background(14, 11, 22);
   for (let i = 0; i < bubbles.length; i++) {
     if (bubbles[i].contains(mouseX, mouseY)) {
       bubbles[i].changeColor(255);
@@ -70,8 +70,8 @@ class Bubble {
   show() {
     stroke(255);
     strokeWeight(4);
-    fill(this.brightness, 125);
+    fill(71, 23, 246);
     ellipse(this.x, this.y, this.r * 2);
-    text('123',this.x-10,this.y-3,this.r,this.r)	//text
+    text('123',this.x-12,this.y-3,this.r,this.r)	//text
   }
 }
